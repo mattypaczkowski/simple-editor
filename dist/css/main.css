@@ -317,6 +317,11 @@ html {
 
 body {
   color: #F9C802;
-  background: #000; }
+  background: black; }
+
+.editorText {
+  width: 400px;
+  height: 400px;
+  margin: 100px auto; }
 
 /*# sourceMappingURL=main.css.map */
