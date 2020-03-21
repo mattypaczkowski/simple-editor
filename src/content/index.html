@@ -33,15 +33,18 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="editorText">
-     <h1>simple editor text</h1>
-      <p>
-         <textarea id="text" name="text" cols="45" rows="10"></textarea>
-      </p>
-      <button type="button">Load</button>
-      <button type="button">Save</button>
-
+    <main class="main">
+     <h1>simplez text editor</h1>
+      <form class="form">
+        <p class="form__board">
+          <textarea class="board" id="text" name="text" cols="60" rows="15"></textarea>
+        </p>
+        <div class="form__actions">
+          <button type="button" class="button button__load">Load</button>
+          <button type="button" class="button button__save">Save</button>
+        </div>
+      </form>
+    </main>
     <script src="js/main.js"></script>
-    </div>
   </body>
 </html>

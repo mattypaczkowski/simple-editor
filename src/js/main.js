@@ -17,6 +17,16 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-console.log(`Hello world!`);
+const load = document.querySelector('.button__load');
 
+const save = document.querySelector('.button__save');
+ 
+const board = document.querySelector('.board')
 
+if (localStorage.getItem('board')) {
+  board.value = localStorage.getItem('board')
+}
+
+board.addEventListener('keyup', (e) => {
+  localStorage.setItem('board',e.target.value)
+});
