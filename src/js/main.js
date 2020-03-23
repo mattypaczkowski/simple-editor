@@ -23,10 +23,12 @@ const save = document.querySelector('.button__save');
  
 const board = document.querySelector('.board')
 
-if (localStorage.getItem('board')) {
-  board.value = localStorage.getItem('board')
-}
+save.addEventListener('click', (e) => {
+  e.preventDefault();
+  localStorage.setItem('board', board.value)
+} )
 
-board.addEventListener('keyup', (e) => {
-  localStorage.setItem('board',e.target.value)
-});
+load.addEventListener('click', (e) => {
+  e.preventDefault();
+  board.value = localStorage.getItem('board');
+} )

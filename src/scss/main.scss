@@ -23,26 +23,29 @@ body {
   min-height: 80vh;
 }
 
-
-.form{
-&__actions {
-  display: flex;
-  justify-content: flex-end;
-  }
+.board{
+  padding: 12px;
 }
 
-
 .button {
+  cursor: pointer;
+  outline: 0;
   border-radius: 100px;
   padding: 6px 16px;
   font-size: 16px;
   color: white;
-  margin-left: 12px;  
+  margin-left: 12px;
 &__save{
   background: #8FBC94;
   }
-
 &__load{
     background: #DA627D;
     }
-}
+  }
+
+.form{
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    }
+  }

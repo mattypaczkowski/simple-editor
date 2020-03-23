@@ -337,15 +337,12 @@ body {
           justify-content: center;
   min-height: 80vh; }
 
-.form__actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+.board {
+  padding: 12px; }
 
 .button {
+  cursor: pointer;
+  outline: 0;
   border-radius: 100px;
   padding: 6px 16px;
   font-size: 16px;
@@ -355,5 +352,13 @@ body {
     background: #8FBC94; }
   .button__load {
     background: #DA627D; }
+
+.form__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 /*# sourceMappingURL=main.css.map */
