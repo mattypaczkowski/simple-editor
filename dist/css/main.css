@@ -318,14 +318,8 @@ html {
 
 body {
   font-family: 'Baloo Da 2';
-  color: #F9C802;
-  background: #000428;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#004e92), to(#000428));
-  background: -o-linear-gradient(left, #004e92, #000428);
-  background: linear-gradient(to right, #004e92, #000428);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  background: #59656F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,9 +343,19 @@ body {
   color: white;
   margin-left: 12px; }
   .button__save {
-    background: #8FBC94; }
+    background: #06BA63;
+    -webkit-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear; }
+    .button__save:hover {
+      background: #59656F; }
   .button__load {
-    background: #DA627D; }
+    background: #359BFB;
+    -webkit-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear; }
+    .button__load:hover {
+      background: #59656F; }
 
 .form__actions {
   display: -webkit-box;

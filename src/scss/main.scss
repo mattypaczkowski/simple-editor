@@ -13,10 +13,8 @@ html {
 
 body {
   font-family: 'Baloo Da 2';
-  color: $yellow;
-  background:  #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  background: #59656F;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,10 +34,19 @@ body {
   color: white;
   margin-left: 12px;
 &__save{
-  background: #8FBC94;
+  background: #06BA63;
+  transition: background .5s linear;
+  &:hover {
+    background:#59656F;
+    }
   }
 &__load{
-    background: #DA627D;
+    background: #359BFB;
+    transition: background .5s linear;
+    &:hover{
+      background:#59656F;
+      ;
+    }  
     }
   }
 
